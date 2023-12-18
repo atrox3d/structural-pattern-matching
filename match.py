@@ -1,4 +1,4 @@
-
+from runners import printer
 
 def main(run) -> None:
     while True:
@@ -7,4 +7,4 @@ def main(run) -> None:
 
 
 if __name__ == '__main__':
-    main(print)
+    main(printer.run)
