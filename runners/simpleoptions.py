@@ -4,8 +4,10 @@ def run(command: str) -> None:
     match command.split():
         case ['load', filename]:
             print(f'loading {filename}...')
+
         case ['save', filename]:
             print(f'saving {filename}...')
+
         case ['quit' | 'exit' |'bye', *rest]:
             # [quit | exit | bye]  [--force | f]
             options = '--force', '-f'
@@ -14,5 +16,6 @@ def run(command: str) -> None:
             else:
                 print('quitting...')
             quit()
+            
         case _:
             print(f'Unknown command {command!r}')
