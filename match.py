@@ -1,5 +1,6 @@
 from runners import printer
 from runners import simplematch
+from runners import simpleargs
 
 def main(run) -> None:
     while True:
@@ -8,5 +9,5 @@ def main(run) -> None:
 
 
 if __name__ == '__main__':
-    runner = simplematch.run
+    runner = simpleargs.run
     main(runner)

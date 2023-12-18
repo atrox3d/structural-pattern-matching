@@ -1,5 +1,5 @@
 def run(command: str) -> None:
-    print(f'simple matching {command}...')
+    print(f'simple matching: {command}...')
 
     match command:
         case 'quit':
@@ -8,5 +8,5 @@ def run(command: str) -> None:
         case 'reset':
             print('resetting...')
             pass
-        case _:
-            print(f'Unknown command {command!r}')
+        case other:
+            print(f'Unknown command {other!r}')
