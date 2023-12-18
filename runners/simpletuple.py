@@ -1,14 +1,14 @@
 def run(command: str) -> None:
-    print(f'simple list matching with args: {command}...')
+    print(f'simple tuple matching with args : {command}...')
 
     match command.split():
-        case ['load', filename]:
+        case 'load', filename:
             print(f'loading {filename}...')
 
-        case ['save', filename]:
+        case 'save', filename:
             print(f'saving {filename}...')
 
-        case ['quit' | 'exit' |'bye']:
+        case 'quit' | 'exit' |'bye',:
             print('quitting...')
             quit()
             
