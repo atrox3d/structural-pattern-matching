@@ -5,6 +5,7 @@ from runners import simpletuple
 from runners import simpleoptions
 from runners import guardedoptions
 from runners import simpledict
+from runners import objectmatch
 
 def main(run) -> None:
     while True:
@@ -13,5 +14,5 @@ def main(run) -> None:
 
 
 if __name__ == '__main__':
-    runner = guardedoptions.run
+    runner = objectmatch.run
     main(runner)
