@@ -8,7 +8,8 @@ def run(command: str) -> None:
         case ['save', filename]:
             print(f'saving {filename}...')
 
-        case ['quit' | 'exit' |'bye', *rest] if any(opt in rest for opt in ('--force', '-f')):
+        case ['quit' | 'exit' |'bye', *rest] \
+                if any(opt in rest for opt in ('--force', '-f')):
             print('force quitting...')
             quit()
 
